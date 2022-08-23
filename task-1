@@ -1,0 +1,22 @@
+// SPDX-License-Identifier:UNLICENSED
+pragma solidity ^0.8.15;
+
+contract task1{
+
+// declaring & assigning the string type varaible which having a visibilty public.
+string public greetMessage = "Hello Solidity";
+
+// declaring & assigning the unsigned integer type varaible which having a visibilty public.
+uint8 a=10;
+
+// create a get function which can get the value of state variable.
+function getStateVariable() public view returns(uint8){
+    return a;
+}
+
+// create a get function which can get the value of only local variable.
+function getLocalVariable() public pure returns(uint8 b){
+b=20;
+ return b;   
+}
+}
