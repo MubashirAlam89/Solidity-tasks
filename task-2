@@ -1,0 +1,59 @@
+// SPDX-License-Identifier:UNLICENSED
+pragma solidity ^0.8.15;
+
+contract task2{
+
+// subTask-1
+
+//  declaring a unsigned integer type state varaiable
+uint a;
+// creating a function which can assigned the value on declared state variable
+
+function  setA(uint _a) public{
+    a=_a;
+}
+
+// creating a function which can get the value on declared state variable
+function getA() public view returns(uint){
+    return a;
+}
+
+
+// subTask-2
+
+// creating a evaluate function 
+function evaluate(int b , int c)public pure returns(int){
+
+int sum = b + c;
+int sub = b - c;
+int result = sum - sub;
+return result;
+
+}
+
+
+// subTask-3
+
+// creating a find function which find value which divisible by 3
+function find(uint _a) public pure returns(uint){
+    require (_a > 0 , "number is less then zero");
+    require (_a % 3 ==0  , "number is not divisible by 3");
+    return _a % 3;
+}
+
+// subTask-4
+
+// creating a average fuction
+function average(int _a , int _b, int _c) public pure returns(int){
+require(_a > 0 && _b > 0 && _c > 0 , "number is less then zero");
+
+int _average =  (_a+_b+_c) / 3;
+return _average;
+}
+  
+}
+
+
+
+
+
