@@ -1,0 +1,22 @@
+// // SPDX-License-Identifier:UNLICENSED
+pragma solidity ^0.8.15;
+
+contract prime{
+
+function _prime(uint number)public pure returns (string memory) {
+
+  if(number <= 1){
+      return "it's not a prime number" ;
+}
+
+for(uint i=2 ; i<number/2;i++){
+    if(number % i == 0){
+        return "it's not a prime number";
+    }
+
+} 
+return "it's a prime number";
+
+}
+}
+
