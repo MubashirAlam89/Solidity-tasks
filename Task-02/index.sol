@@ -1,3 +1,8 @@
+// Task 2: Simple Storage Contract
+
+// Question: Write a contract where a user can store a number and retrieve it.
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
