@@ -1,4 +1,3 @@
-# Task 29: Interacting with an External Contract
+# Task 30: Creating a Modifier with Conditional Access
 
-### Question: Create a contract that interacts with another contract to retrieve and set data. Assume there is a contract DataStorage with a setData and getData function. Implement a contract that uses DataStorage for storing and retrieving a value.
-
+### Question: Write a contract with a modifier that restricts access to a function based on specific conditions. Implement a function that can only be called if the caller’s address is odd.
